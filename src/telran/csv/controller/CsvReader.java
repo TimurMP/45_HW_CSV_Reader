@@ -27,28 +27,28 @@ public class CsvReader {
 
 
         double notSurvived = deadOrAlive(FILE_NAME, "dead");
-        System.out.println("Total not survived: " + notSurvived);
+        System.out.println("Total not survived: " + String.format("%.0f", notSurvived));
 
         double survived = deadOrAlive(FILE_NAME, "alive");
-        System.out.println("Total Survived: " + survived);
+        System.out.println("Total Survived: " + String.format("%.0f", survived));
 
         double menNotSurvived = deadOrAliveByType(FILE_NAME, "dead", "men");
-        System.out.println("Total men not survived: " + menNotSurvived);
+        System.out.println("Total men not survived: " + String.format("%.0f", menNotSurvived));
 
         double menSurvived = deadOrAliveByType(FILE_NAME, "alive", "men");
-        System.out.println("Total men survived: " + menSurvived);
+        System.out.println("Total men survived: " + String.format("%.0f", menSurvived));
 
         double womenNotSurvived = deadOrAliveByType(FILE_NAME, "dead", "women");
-        System.out.println("Total women not survived: " + womenNotSurvived);
+        System.out.println("Total women not survived: " + String.format("%.0f", womenNotSurvived));
 
         double womenSurvived = deadOrAliveByType(FILE_NAME, "alive", "women");
-        System.out.println("Total women survived: " + womenSurvived);
+        System.out.println("Total women survived: " + String.format("%.0f", womenSurvived));
 
         double kidsNotSurvived = deadOrAliveByType(FILE_NAME, "dead", "children");
-        System.out.println("Total children not survived: " + kidsNotSurvived);
+        System.out.println("Total children not survived: " + String.format("%.0f", kidsNotSurvived));
 
         double kidsSurvived = deadOrAliveByType(FILE_NAME, "alive", "children");
-        System.out.println("Total children survived: " + kidsSurvived);
+        System.out.println("Total children survived: " + String.format("%.0f", kidsSurvived));
 
 
     }
